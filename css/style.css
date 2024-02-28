@@ -409,7 +409,7 @@ section{
 }
 
 .categories .box-container .box{
-    padding: 3rem 2 rem;
+    padding: 3rem 2rem;
     border-radius: .5rem;
     background: #fff;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
@@ -431,16 +431,123 @@ section{
 .categories .box-container .box h3{
     font-size:2rem;
     color: #130f40;
-    line-height: 1.8rem;
+    line-height: 1.8;
 }
 
 .categories .box-container .box p{
     font-size:1.7rem;
     color: #666;
-    line-height: 1.8rem;
+    line-height: 1.8;
     padding: 1rem 0;
 }
 
+
+.review .review-slider{
+    padding:1rem;
+
+}
+
+.review .review-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: .1rem solid rgba(0,0,0,.1);
+    box-shadow:  0 .5rem 1rem rgba(0,0,0,.1);
+    transition: .2s linear;
+}
+
+.review .review-slider .box:hover{
+    outline:  .2rem solid #130f40;
+    outline-offset: 0rem;
+}
+
+.review .review-slider .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.review .review-slider .box p{
+    padding: 1rem 0;
+    line-height: 1.8;
+    color:#666;
+    font-size: 1.5rem;
+}
+
+.review .review-slider .box h3{
+    padding-bottom: .5rem;
+    color:#130f40;
+    font-size: 2.2rem;
+}
+
+.review .review-slider .box .stars i{
+    color:#ff7800;
+    font-size: 1.7rem;
+}
+
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box{
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background: #fff;
+}
+
+.blogs .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: .2rem solid rgba(0,0,0,.1);
+}
+
+.blogs .box-container .box .content .icons a{
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.blogs .box-container .box .content .icons a:hover{
+    color: #130f40;
+}
+
+.blogs .box-container .box .content .icons a i{
+    color: #ff7800;
+    padding-right: .5rem;
+}
+
+.blogs .box-container .box .content h3{
+    line-height: 1.8;
+    color: #130f40;
+    font-size: 2.2rem;
+    padding: .5rem 0;
+
+}
+
+.blogs .box-container .box .content p{
+    line-height: 1.8;
+    color: #666;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    
+}
 
 
 /* Media Queries */
