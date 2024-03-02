@@ -81,3 +81,25 @@ var swiper = new Swiper(".product-slider", {
       },
     },
   });
+
+  function message(){
+    let msg = alert("Item Added to cart");
+  }
+
+  let cartItems = [];
+
+function addToCart(productName, price) {
+  const item = { productName, price };
+  cartItems.push(item);
+  displayCart();
+}
+
+function displayCart() {
+  const cartList = document.getElementById('cart-items');
+  cartList.innerHTML = '';
+  cartItems.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${item.productName} - $${item.price}`;
+    cartList.appendChild(listItem);
+  });
+}

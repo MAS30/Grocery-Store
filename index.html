@@ -19,7 +19,7 @@
 
     <header class="header">
 
-        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> groco </a>
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i> Grocery Spot </a>
 
         <nav class="navbar">
             <a href="#home">home</a>
@@ -43,7 +43,7 @@
         </form>
 
         <div class="shopping-cart">
-            <div class="box">
+            <!-- <div class="box">
                 <i class="fas fa-trash"></i>
                 <img src="img/cart-img-1.jpeg" alt="">
                 <div class="content">
@@ -71,7 +71,11 @@
                 </div>
             </div>
             <div class="total">total : $19.69/- </div>
-            <a href="#" class="btn">checkout</a>
+            <a href="#" class="btn">checkout</a> -->
+
+            <ul id="cart-items">
+                <!-- Cart items will be displayed here -->
+              </ul>
         </div>
 
         <form action="" class="login-form">
@@ -140,56 +144,56 @@
                 <div class="swiper-slide box">
                     <img src="img/product-1.png" alt="">
                     <h3>fresh orange</h3>
-                    <div class="price">$4.99/- - 10.99/- </div>
+                    <div class="price">$10.99/- </div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                        <a href="#" class="btn">add to cart</a>
+                        <a class="btn" onclick="addToCart('fresh orange', 10.99); message()">add to cart</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide box">
                     <img src="img/product-2.png" alt="">
                     <h3>fresh watermelon</h3>
-                    <div class="price">$4.99/- - 10.99/- </div>
+                    <div class="price">$15.99/-</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                        <a href="#" class="btn">add to cart</a>
+                        <a class="btn" onclick="addToCart('fresh watermelon', 15.99); message()">add to cart</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide box">
                     <img src="img/product-3.png" alt="">
                     <h3>fresh strawberry</h3>
-                    <div class="price">$4.99/- - 10.99/- </div>
+                    <div class="price">$17.99/-</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                        <a href="#" class="btn">add to cart</a>
+                        <a class="btn" onclick="addToCart('fresh strawberry', 17.99); message()">add to cart</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide box">
                     <img src="img/product-4.png" alt="">
                     <h3>fresh banana</h3>
-                    <div class="price">$4.99/- - 10.99/- </div>
+                    <div class="price">$8.99/-</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                        <a href="#" class="btn">add to cart</a>
+                        <a class="btn" onclick="addToCart('fresh banana', 8.99); message()">add to cart</a>
                     </div>
                 </div>
             </div>
@@ -200,56 +204,56 @@
                 <div class="swiper-slide box">
                     <img src="img/product-5.png" alt="">
                     <h3>fresh kiwi</h3>
-                    <div class="price">$4.99/- - 10.99/- </div>
+                    <div class="price">$11.99/-</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                        <a href="#" class="btn">add to cart</a>
+                        <a class="btn" onclick="addToCart('fresh kiwi', 11.99); message()">add to cart</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide box">
                     <img src="img/product-6.png" alt="">
                     <h3>fresh mango</h3>
-                    <div class="price">$4.99/- - 10.99/- </div>
+                    <div class="price">$13.99/-</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                        <a href="#" class="btn">add to cart</a>
+                        <a class="btn" onclick="addToCart('fresh mango', 13.99); message()">add to cart</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide box">
                     <img src="img/product-7.png" alt="">
                     <h3>fresh meat</h3>
-                    <div class="price">$4.99/- - 10.99/- </div>
+                    <div class="price">$19.99/-</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                        <a href="#" class="btn">add to cart</a>
+                        <a class="btn" onclick="addToCart('fresh meat', 19.99); message()">add to cart</a>
                     </div>
                 </div>
 
                 <div class="swiper-slide box">
                     <img src="img/product-8.png" alt="">
                     <h3>fresh pineapple</h3>
-                    <div class="price">$4.99/- - 10.99/- </div>
+                    <div class="price">$14.99/-</div>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                        <a href="#" class="btn">add to cart</a>
+                        <a class="btn" onclick="addToCart('fresh pineapple', 14.99); message()">add to cart</a>
                     </div>
                 </div>
             </div>
@@ -431,7 +435,7 @@
 
             <div class="box">
 
-                <h3> groco <i class="fas fa-shopping-basket"></i></h3>
+                <h3> Grocery Spot <i class="fas fa-shopping-basket"></i></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, cupiditate?</p>
                 <div class="share">
                     <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
@@ -472,7 +476,7 @@
             </div>
         </div>
 
-        <div class="credit">created by <span>MAS</span> | all rights reserved</div>
+        <div class="credit">created by <span>Affan Siddiqui</span> | Bano Qabil 2.0 Project</div>
     </section>
 
     <!-- footer ends -->

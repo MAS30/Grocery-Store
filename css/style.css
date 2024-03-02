@@ -180,7 +180,7 @@ section{
     transform: .4s linear;
 }
 
-.header .shopping-cart .box{
+/* .header .shopping-cart .box{
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -235,6 +235,12 @@ section{
     display: block;
     text-align: center;
     margin: 1rem;
+} */
+
+.header .shopping-cart #cart-items{
+    list-style: none;
+    font-size: 1.8rem;
+    color: #130f40
 }
 
 
